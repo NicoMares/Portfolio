@@ -156,9 +156,47 @@ object-fit: cover; /* Ajusta la imagen dentro del círculo */
 }
 
 
+.instituciones {
+    text-align: center; /* Centra el título */
+    margin-top: 50px; /* Espaciado superior */
+    color: white; /* Color del texto */
+}
 
+.instituciones h2 {
+    font-size: 2rem; /* Tamaño del título */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+}
 
+.instituciones-lista {
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra las instituciones horizontalmente */
+    flex-wrap: wrap; /* Permite que las instituciones se ajusten en varias filas si es necesario */
+    gap: 20px; /* Espaciado entre las instituciones */
+    margin-top: 20px; /* Espaciado superior */
+}
 
+.instituciones-lista div {
+    text-align: center; /* Centra el contenido dentro de cada institución */
+    width: 150px; /* Ancho fijo para cada institución */
+}
+
+.instituciones-lista img {
+    width: 100%; /* Ajusta el logo al ancho del contenedor */
+    height: auto; /* Mantiene la proporción del logo */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+.instituciones-lista p {
+    margin-top: 10px; /* Espaciado entre el logo y el texto */
+    font-size: 0.9rem; /* Tamaño de fuente para los años */
+    color: white; /* Color del texto */
+}
+
+.institucion-logo {
+    width: 100%; /* Ajusta el logo al ancho del contenedor */
+    height: auto; /* Mantiene la proporción del logo */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
 
 
 .tech {
