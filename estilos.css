@@ -328,3 +328,11 @@ footer {
     margin-left: 50px;
     /* separación */
 }
+
+.link-proyectos {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    margin-left: 50px;
+    /* separación */
+}
