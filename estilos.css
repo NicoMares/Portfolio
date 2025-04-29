@@ -117,7 +117,7 @@ object-fit: cover; /* Ajusta la imagen dentro del círculo */
 
 
 .lenguajes {
-    height: 340px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,9 +130,10 @@ object-fit: cover; /* Ajusta la imagen dentro del círculo */
 
 #contacto {
     text-align: center; /* Centra todo el contenido */
-    padding: 250px;
-   margin-top:-120px;
+    padding: 200px; /* Reduce el padding */
+    margin-top: 0; /* Elimina el margen superior negativo */
     color: white; /* Texto blanco */
+    
 }
 
 
@@ -157,15 +158,8 @@ object-fit: cover; /* Ajusta la imagen dentro del círculo */
 
 
 
-.aptitudes {
-    width: 50%;
-}
 
-.tech-list {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
-}
+
 
 .tech {
     height: 90px;
@@ -186,6 +180,22 @@ object-fit: cover; /* Ajusta la imagen dentro del círculo */
     gap: 20px; /* Espaciado entre los proyectos */
 }
 
+.proyecto1 {
+    width: 300px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border: solid #F2F2F2 1px; /* Borde claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+.proyecto2 {
+    width: 30%; /* Ancho del proyecto */
+    border: solid #F2F2F2 1px; /* Borde claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centra el texto dentro del proyecto */
+}
 
 .card {
     text-align: center;
@@ -195,9 +205,7 @@ object-fit: cover; /* Ajusta la imagen dentro del círculo */
     padding: 10px;
 }
 
-.card img {
-    width: 100%;
-}
+
 
 .card a,
 footer a {
@@ -211,16 +219,17 @@ footer a {
 }
 
 footer {
-    background-color: #ff2929;
+    background-color: black; 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    color: #F2F2F2;
-    height: 1px;
-    padding: 200px;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    color: #F2F2F2; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    height: auto; /* Ajusta la altura automáticamente al contenido */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    margin-top: 0px;
 }
-
 
 /* para que funcionen los botones */
 @media (max-width: 10px) {
