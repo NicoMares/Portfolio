@@ -240,7 +240,10 @@ footer {
     }
 
    
-   
+       .tech {
+        height: 90px;
+    }
+}
 
     .aptitudes {
         width: auto;
@@ -255,31 +258,17 @@ footer {
    
    
 
-    .card {
-        width: 80%;
-        margin-top: 20px;
-    }
+ 
 
-    .red-social {
-        margin: 0 10px 0 10px;
-    }
+   
 
     
 
-    .aptitudes {
-        width: 50%;
-    }
+   
 
-    .tech-list {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 10px;
-    }
+   
 
-    .tech {
-        height: 90px;
-    }
-}
+
 
 
    
