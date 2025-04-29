@@ -1,166 +1,294 @@
-body{
+
+/*Letra */
+body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
-header{
+
+
+/*Encabezado*/
+header {
     height: 65px;
-    background-color: #20c5ee;
-    color: white;
+    background-color:black;
     display: flex;
     align-items: center;
-    padding-left: 25px;
-}
-.cara{
-    border-radius: 500px;
-    height: 200px;
-}
-.uno{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: calc(100vh - 65px);
-    background-color: #303030;
-    color: white;
-    /* padding-top: 10%; */
-}
-.caja-central{
-    margin-top: 10%;
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    border-radius: 20px;
-    overflow: hidden;
-    height: 50%;
-}
-.caja-cara{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    background-color: #424242;
-}
-.caja-presentacion{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    background-color: #F2F2F2;
-    color: #303030;
-    padding: 10px;
+    padding-left: 55px;
 }
 
-.dos{
-    background-color: #F2F2F2;
-    height: 700px;
+
+/*fondo de la pagina*/
+.fondo {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: calc(100vh - 65px); /* Ocupa toda la altura de la pantalla menos el header */
+    background-color:black; /* Fondo negro */
+    color: white; /* Texto blanco */
+}
+
+
+.logo{
+    
+    height: 70x; /* Ajusta el tamaño de la imagen */
+    width: 70px; /* Igual a la altura */
+    object-fit: cover; /* Ajusta la imagen dentro del círculo */
+    margin-right: 20px; /* Espaciado entre la imagen y el texto */
+
+
+}
+
+.texto-presentacion {
+    margin-top: -20px; /* Espaciado superior */
+    margin-right: 160px;
+   
+    color: white; /* Texto blanco */
+    font-size:x-small;/*tamaño de la letra*/
+}
+
+.cara{
+
+margin-top: -20px;
+margin-left: 80px;
+height: 230px; /* Ajusta el tamaño de la imagen */
+width: 230px; /* Igual a la altura */
+border-radius: 50%; /* Hace la imagen circular */
+object-fit: cover; /* Ajusta la imagen dentro del círculo */
+
+
+}
+
+
+
+/*Nombre que Figura en la Introduccion*/
+.nombre {
+    font-size: 3.5rem; /* Tamaño grande para el nombre */
+    margin-bottom: 20px; /* Espaciado debajo del nombre */
+}
+
+
+
+.organiza-foto-descripcion-nombre {
+    display: flex;
+    flex-direction: row; /* Alinea los elementos en fila */
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Espacia los elementos */
+    width: 1200%; /* Ajusta el ancho del contenedor */
+}
+
+.titulo-SobreMI {
+    font-size: 2rem; /* Tamaño del título */
+    margin-top: -40px; /* Ajusta el margen superior si es necesario */
+    color: white; /* Texto blanco */
+    background-color: black; /* Fondo negro */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 10px 0; /* Espaciado interno superior e inferior */
+}
+
+/*(Ubicacion e Color) del Sobre MI */
+.SobreMI {
+    background-color: black; /* Fondo negro */
+    margin-top: -20px; /* Ajusta el margen superior si es necesario */
+    
+    font-size: x-small;
+    padding: 20px; /* Espaciado interno */
+    width: 100%; /* Asegura que cubra todo el ancho */
+    max-width: 1200px; /* Limita el ancho máximo del contenedor */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    color: white; /* Texto blanco */
+    display: flex; /* Activa Flexbox */
+   
+}
+
+.sobreMI-texto  {
+    margin-bottom: 15px; /* Espaciado entre párrafos */
+    font-size: 1rem; /* Tamaño de fuente */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: white; /* Color del texto */
+}
+
+.cara-sobremi {
+    height: 250px; /* Ajusta la altura de la imagen */
+    width: 350px; /* Ajusta el ancho de la imagen */
+    border-radius: 20px; /* Bordes redondeados */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Agrega una sombra para un efecto más elegante */
+}
+
+
+.lenguajes {
+    height: 340px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #303030;
-    padding-left: 20%;
-    padding-right: 20%;
+    color: #ffffff;
+    padding-left: 30%;
+    padding-right: 30%;
+
 }
-.aptitudes{
+
+#contacto {
+    text-align: center; /* Centra todo el contenido */
+    padding: 250px;
+   margin-top:-120px;
+    color: white; /* Texto blanco */
+}
+
+
+
+
+
+.redes-sociales {
+    display: flex;
+    justify-content: center; /* Centra las redes sociales horizontalmente */
+    gap: 20px; /* Espaciado entre los iconos */
+    margin-top: 0px;
+}
+
+.red-social {
+    height: 50px; /* Tamaño de los íconos */
+    width: 50px;
+    border-radius: 50%; /* Hace los íconos circulares */
+    background-color: #F2F2F2; /* Fondo claro para los íconos */
+    padding: 5px;
+}
+
+
+
+
+.aptitudes {
     width: 50%;
 }
-.tech-list{
+
+.tech-list {
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
 }
 
-.tech{
+.tech {
     height: 90px;
 }
 
-.tres{
-    background-color: #303030;
-    height: 600px;
+.proyectos {
+   text-align: center; 
+    margin-top: 100px; 
+    color: white; 
+   
+  
+}       
+
+.proyectos-organizadora {
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    color: #F2F2F2;
+    justify-content: center; /* Centra los proyectos horizontalmente */
+    flex-wrap: wrap; /* Permite que los proyectos se ajusten en varias filas si es necesario */
+    gap: 20px; /* Espaciado entre los proyectos */
 }
-.proyectos{
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-}
-.card{
+
+
+.card {
     text-align: center;
     width: 30%;
     border: solid #F2F2F2 1px;
     border-radius: 10px;
     padding: 10px;
 }
-.card img{
+
+.card img {
     width: 100%;
 }
-.card a, footer a {
+
+.card a,
+footer a {
     color: white;
 }
 
-.red-social{
+.red-social {
     height: 60px;
     background-color: #F2F2F2;
     border-radius: 10px;
 }
 
-footer{
-    background-color: #424242;
+footer {
+    background-color: #ff2929;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     color: #F2F2F2;
-    height: 250px;
-}
-.contacto{
-    width: 30%;
-    display: flex;
-    justify-content: center;
+    height: 1px;
+    padding: 200px;
 }
 
-@media (max-width: 1000px) {
-    .caja-central{
+
+/* para que funcionen los botones */
+@media (max-width: 10px) {
+    .caja-central {
         width: 90%;
         height: 70%;
         flex-direction: column;
     }
-    .caja-cara{
-        width: 100%;
-        height: 50%;
-    }
-    .caja-presentacion{
-        width: 100%;
-        height: 50%;
-        align-items: flex-start;
-    }
-    .aptitudes{
+
+   
+   
+
+    .aptitudes {
         width: auto;
     }
-    .dos{
+
+    .SobreMI {
         height: auto;
         padding: 0 10px 10px 10px;
 
     }
-    .tres{
-        height: auto;
-    }
-    .proyectos{
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
-        padding-bottom: 20px;
-    }
-    .card{
+
+   
+   
+
+    .card {
         width: 80%;
         margin-top: 20px;
     }
-    .red-social{
+
+    .red-social {
         margin: 0 10px 0 10px;
     }
+
+    
+
+    .aptitudes {
+        width: 50%;
+    }
+
+    .tech-list {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    .tech {
+        height: 90px;
+    }
+}
+
+
+   
+
+
+
+.link-sobre-mi {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    margin-left: 630px;
+    /* separación */
+}
+
+.link-contacto {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    margin-left: 50px;
+    /* separación */
 }

@@ -1,130 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="imagenes/logo.ico">
-    <title>Nicolas Mares 🙂</title>
+    <link rel="icon" href="imagenes/Yo/logo.ico">
+    <title>Porfolio | Nicolas Mares 🙂</title>
 
+    <!-- Fuentes y CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 
-</head>
 
-<style>
-   
-</style>
+
+
 
 <body>
     <header>
-        <h3>⭐ Nicolás Mares</h3>
+
+
+        <img class="logo" src="imagenes/Yo/logo.ico" alt="Logo Nicolas Mares"> <!-- Logo de la pagina -->
+        <a href="#sobreMi" class="link-sobre-mi">Sobre Mí</a></h3> <!-- boton sobre mi -->
+        <a href="#contacto" class="link-contacto">Contacto</a>   <!-- boton contacto -->
     </header>
-    <section class="uno">
-        <div class="caja-central">
-            <div class="caja-cara">
-                <img class="cara" src="imagenes/cara.jpg" alt="Nicolas Mares">            
+
+
+
+    <section class="fondo"> 
+        <div class="organiza-foto-descripcion-nombre">
+            <div class="organiza-cara">
+                <img class="cara" src="imagenes/Yo/cara-vuvuzela.jpg" alt="Nicolas Mares">
             </div>
-            <div class="caja-presentacion">
-                <div>    
-                    <h1>Hola 👋 </h1>
+            <div class="texto-presentacion">
+                <div>
+
+                    <h1 class="nombre">Nicolás Mares</h1>
+
+
                     <p class="presentacion">
-                       Buenas! Mi Nombre es Nicolás Mares.
-                        soy estudiante de programación en la UTN de Pacheco.
-                        Actualmente tengo 20 Años, Cursando de momento Programacion 3 con Maxi Sar Fernandez.
-                
-                        <br>
+
+                    <h1>🎓 Estudiante de la Tecnicatura Universitaria en Programación (UTN FRGP, Pacheco).</h1>
+
+                    <h1>💻 Apasionado por el desarrollo de páginas web y aplicaciones, tanto móviles como de escritorio.
+                    </h1>
+
+                    <h1>🚀 En constante aprendizaje para construir mi futuro profesional en el mundo IT.</h1>
+
+
                     </p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="dos">
-        <h2>Sobre mí</h2>
-        <p>
-            
-            Soy estudiante Argentino  de Programación desde febrero 2023.
-            Termine la secundaria el año  2022.
-            en Septiembre del 2022 comence a estudiar en Digital House, un curso de Programación Full Stack, pero lo deje porque no me gustaba debido a que no era para Iniciantes.
-             y con tan solo 18 años, apenas termine la secundaria me anote en Programacion en la UTN, en un principio iba a ir de forma Precensial, pero sin saber como era el tema de las comisiones, me anote de forma virutal y asi sigo  y  en un futuro me gustaría dedicarme a la programación.
-            
 
-        </p>
-        <h2>lenguajes</h2>
-        <p>
-            Me gusta mucho la programación y estoy aprendiendo a programar en dicha carrera los lenguajes de en C++ , C# , html, css y dentro de poco .NET.
-        </p>
-        <div class="lenguajes">
-            <div class="tech-list">
-                <img src="https://www.svgrepo.com/show/452183/cpp.svg" class="tech" alt="c++">
-                <img src="https://www.horuss.com.mx/wp-content/uploads/2019/04/c.png" class="tech" alt="c#">
-                <img src="https://logodownload.org/wp-content/uploads/2016/10/html5-logo.png" class="tech" alt="html">
-                
-            </div>
-            <div class="tech-list">
-               
-               
-                <img src="https://th.bing.com/th/id/OIP.TfvCUlW_Rwta03b-bvjsVQHaBz?cb=iwc1&rs=1&pid=ImgDetMain" class="tech" alt=".net">
-            </div>
+
+    <!-- Barra separadora-->
+
+
+    <!-- SECCIÓN SOBRE MÍ CON ID -->
+  
+    
+    <section class="titulo-SobreMI"> 
+    <h1>Sobre mí</h1>
+    <section class="SobreMI" id="sobreMi">
+        <div class="sobreMI-texto">
+           
+            <p>Soy un estudiante de Programación desde febrero de 2023. Soy argentino y tengo 20 años.</p>
+            <p>Terminé la secundaria en 2022, egresando como Bachiller en Economía y Administración.</p>
+            <p>En septiembre de 2022, mientras finalizaba mis estudios secundarios, comencé un curso de programación en Digital House.</p>
+            <p>Mi objetivo era empezar a familiarizarme con el mundo de la programación, ya que rápidamente descubrí que era el área en la que quería desarrollarme profesionalmente.</p>
+            <p>Con 18 años, me inscribí en la Tecnicatura Universitaria en Programación en la UTN, donde actualmente continúo formándome.</p>
+            <p>En el futuro me gustaría dedicarme profesionalmente al desarrollo de aplicaciones web y móviles.</p>
         </div>
-        <h2>Carrera Estudiantil</h2>
-        <ul>
-            <li>Primaria Completa (Colegio Farmingdale Collage , Dover Hight School & Colegio Los Alamos)  </li>
-            <li>Secundario Completo ( Colegio Los Alamos)  </li>
-            <li>Curso de programacion FULL Stack (Abandonado Tras un Mes de cursada)  👉 <a href="https://playground.digitalhouse.com/login?redirect=%2F&redirectGuard=">Ver</a></li>
-            <li>Carrera Universitaria Tecnicatura Programacion 👉 <a href="https://www.frgp.utn.edu.ar/">Ver</a></li>
-            
-        </ul>
+        <img class="cara-sobremi" src="imagenes/Yo/nico-nieve.JPG" alt="Nicolas Mares">
     </section>
-    <section class="tres">
-        <h2>Mis Proyectos 🔜</h2>
-      <!--  <div class="proyectos">
-            <div class="card">
-                <h3>maxiprograma.com</h3>
-                <img src="" alt="mi proyecto">
-                <p>
-                    Escuela de programación en desarrollo. Cursos disponibles.
-                </p>
-                <a href="https://maxiprograma.com" target="_blank">Ver</a>
+
+            <div class="lenguajes">
+
+                <section class="separator2">&nbsp;</section>
+
+                <h1>Lenguajes</h1>
+                <div class="tech-list">
+
+                    <img src="imagenes/logos/cpp.png" class="tech" alt="c++">
+                    <img src="imagenes/logos/csharp.png" class="tech" alt="c#">
+                    <img src="imagenes/logos/html.png" class="tech" alt="html">
+                </div>
+                <div class="tech-list">
+                    <img src="imagenes/logos/github.png" class="tech" alt="GitHub">
+                    <img src="imagenes/logos/sql.png" class="tech" alt="sql>
             </div>
-            <div class="card">
-                <h3>YouTube</h3>
-                <img src="https://i.ytimg.com/vi/8ANRCYtveMI/maxresdefault.jpg" alt="Maxi Programa en YouTube">
-                <p>
-                    Mi canal donde encontrarás mucha data sobre experiencias y más. Ah, y 
-                    un curso gratis de fundamentos de la programación.
-                </p>
-                <a href="https://youtube.com/maxiprograma" target="_blank">Ver</a>
-            </div>
-            <div class="card">
-                <h3>Campus Virtual</h3>
-                <img src="https://i.ytimg.com/vi/IVhJFByTQBA/maxresdefault.jpg" alt="Campus Virtual Maxi Programa">
-                <p>
-                    Mi plataforma de cursos, donde podrás hacer el MEJOR curso de programación desde cero y GRATIS.
-                </p>
-                <a href="https://campusmaxiprograma.com" target="_blank">Ver</a>
-            </div>
-        </div>
-        -->
+           
+         
+
+
+   <div class="proyectos"></div>
+        <h2>Mis Proyectos:</h2>
+        <div class="proyectos-organizadora"></div>
+        
+        <a href="https://github.com/NicoMares/Progra-3-ACTIVIDAD-4-GRUPO-9B" target="_blank"alt="Proyecto 1">
+            <img src="imagenes/proyectos/Proyecto1.png" class="proyecto" alt="Progra-3-ACTIVIDAD-4-GRUPO-9B">
+
+
     </section>
+
     <footer>
-        <h2>Contactame</h2>
-            <div class="contacto">
+       
+        <footer id="contacto"></footer>
+
+        <div class="contacto">
+            <h1>Contacto</h1>
+
+
+            <p>Contactame a través de mi Email 👉 <a href="mailto:nikomares04@gmail.com"
+                    target="_blank">nikomares04@gmail.com</a></p>
+
+            <div class="redes-sociales">
                 <a href="https://www.linkedin.com/in/nicolas-mares-b94391362/" target="_blank">
-                    <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" class="red-social" alt="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" class="red-social"
+                        alt="LinkedIn">
                 </a>
-                <hr>
                 <a href="https://www.instagram.com/nicolasmares__/" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" class="red-social" alt="">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png"
+                        class="red-social" alt="Instagram">
                 </a>
-                <hr>
                 <a href="https://github.com/NicoMares" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="red-social" alt="">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="red-social" alt="GitHub">
+
                 </a>
             </div>
-            <p style="padding-top: 30px;">Hecho con ayuda de <a href="https://maxiprograma.com" target="_blank">Maxi Programa</a></p>
+            <p style="padding-top: 24x;">Copyright ©2025 Nicolás Mares.</a></p>
     </footer>
 </body>
+
 </html>
