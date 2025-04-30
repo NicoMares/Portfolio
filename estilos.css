@@ -24,13 +24,13 @@
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1.5rem 5%;
+    padding: 1.5rem 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(10px);
-    z-index: 1000;
+    z-index: 1100;
     border-bottom: 1px solid rgba(255,255,255,0.1);
     }
     
@@ -47,6 +47,7 @@
     display: flex;
     gap: 2rem;
     list-style: none;
+    margin-left: -20px;
     }
     
     .cabecera-links a {
