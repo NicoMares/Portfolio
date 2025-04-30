@@ -404,11 +404,30 @@
     transform: translateY(-3px);
     }
     
+
+    /* clave para que se vea bien en telefonos */
     @media (max-width: 768px) {
     .presentacion {
         flex-direction: column;
         text-align: center;
         padding-top: 8rem;
+    }
+
+    @media (max-width: 768px) {
+        .SobreMI {
+            flex-direction: column; /* Cambia la dirección a columna */
+            text-align: center; /* Centra el texto */
+        }
+    
+        .sobreMI-texto {
+            margin-bottom: 20px; /* Añade espacio entre el texto y la imagen */
+        }
+    
+        .cara-sobremi {
+            margin: 0 auto; /* Centra la imagen horizontalmente */
+            width: 250px; /* Ajusta el ancho para pantallas pequeñas */
+            height: auto; /* Mantén la proporción de la imagen */
+        }
     }
     
     .contenido-presentacion {
