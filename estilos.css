@@ -19,8 +19,8 @@
     overflow-x: hidden;
     }
     
-    /* Navigation */
-    .navbar {
+    /* Barra  superior Para botones */
+    .cabecera {
     position: fixed;
     top: 0;
     width: 100%;
@@ -43,13 +43,13 @@
     padding-left: 2.5rem;
     }
     
-    .nav-links {
+    .cabecera-links {
     display: flex;
     gap: 2rem;
     list-style: none;
     }
     
-    .nav-links a {
+    .cabecera-links a {
     color: var(--text);
     text-decoration: none;
     font-weight: 500;
@@ -57,7 +57,7 @@
     position: relative;
     }
     
-    .nav-links a::after {
+    .cabecera-links a::after {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -68,11 +68,11 @@
     transition: width 0.3s ease;
     }
     
-    .nav-links a:hover::after {
+    .cabecera-links a:hover::after {
     width: 100%;
     }
     
-    /* Hero Section */
+    /* Seccion principal */
     .presentacion {
     min-height: 100vh;
     display: flex;
@@ -92,6 +92,7 @@
     position: relative;
     }
     
+    /* Primera Foto*/
     .foto-perfil {
     width: 400px;
     height: 400px;
@@ -399,7 +400,7 @@
     transition: all 0.3s ease;
     }
     
-    .social-links a:hover {
+    .redes-sociales-links a:hover {
     color: var(--accent);
     transform: translateY(-3px);
     }
@@ -435,12 +436,7 @@
         margin-bottom: 3rem;
     }
     
-  
-    
-    .nav-links {
-        display: none;
-    }
-    
+
     .logo {
         font-size: 1.5rem;
         padding-left: 2rem;
