@@ -210,29 +210,32 @@
     }
     
     .instituciones-caja {
-       
         border-radius: 10px;
         padding: 10px;
         width: 150px;
-        height: 150px;
+        height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+       
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background: var(--dark-bg); /* Fondo oscuro */
     }
+    
     
     .instituciones-caja:hover {
         transform: scale(1.1);
         box-shadow: 0 6px 10px rgba(0, 188, 212, 0.5);
     }
     
+    /* cambia el tamaño de las imagenes de las instituciones */
     .instituciones-caja img {
-        width: 60px;
-        height: 60px;
+        width: 120px;
+        height: 120px;
         object-fit: contain;
         margin-bottom: 10px;
+        
     }
     
     .instituciones-caja p {
@@ -242,141 +245,136 @@
     }
 
 
-    /* Mis Lenguajes */
+    /* Mis Tecnolgias */
    
-   .lenguajes {
+   .tecnologias {
     text-align: center;
     padding: 50px 20px;
     
     color: #fff;
 }
 
-.lenguajes-titulo {
+.tecnologias-titulo {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    
 }
 
-.lenguajes-titulo h2 {
+.tecnologias-titulo h2 {
     font-size: 3rem;
     color: #fff;
     margin: 0;
     padding-bottom: 10px;
     border-top: none; /* Elimina la línea arriba del título */
-    background: none; /* Asegúrate de que no haya un fondo */
+    background: none; /* Asegura de que no haya un fondo */
     display: inline-block;
 }
 
-.lista-lenguajes {
+.lista-tecnologias {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajusta el número de columnas automáticamente */
     gap: 20px;
     justify-items: center; /* Centra los elementos horizontalmente */
 }
 
-.lenguajes-caja {
+/* cajita donde se ven las tecnologias */
+.tecnologias-caja {
    
     border-radius: 10px;
     padding: 10px;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
 }
-
-.lenguajes-caja:hover {
+/* cambia el color de fondo al pasar el mouse */
+.tecnologias-caja:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 10px rgba(0, 188, 212, 0.5);
 }
 
-.lenguajes-caja img {
-    width: 60px;
-    height: 60px;
+.tecnologias-caja img {
+    width: 120px;
+    height:120px;
     object-fit: contain;
 }
 
-    .tech-list {
-        display: grid; /* Cambia a Grid */
-        grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas uniformes */
-        gap: 20px; /* Espaciado uniforme entre los logos */
-        justify-content: center; /* Centra el contenido horizontalmente */
-        margin-top: 20px; /* Espaciado superior */
-    }
+.proyectos {
+    text-align: center;
+    padding: 50px 20px;
+    color: #fff;
+}
 
+.proyectos-titulo h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
 
-    .tech {
-        height: 100px; /* Tamaño uniforme para los logos */
-        width: 100px; /* Asegura que todos los logos tengan el mismo ancho */
-        object-fit: contain; /* Ajusta la imagen dentro del contenedor sin distorsionarla */
-        margin: 0 auto; /* Centra cada logo dentro de su celda */
-    }
+.lista-proyectos {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
 
-    .tech {
-        height: 90px;
-    }
-    
-    .proyectos {
-        text-align: center;
-        padding: 50px 20px;
-        color: #fff;
-    }
-    
-    .proyectos-titulo {
-        position: relative;
-        margin-bottom: 20px;
-    }
-    
-    .proyectos-titulo h2 {
-        font-size: 3rem;
-        color: #fff;
-        margin: 0;
-        padding-bottom: 10px;
-        border-top: none; /* Sin línea arriba del título */
-        background: none; /* Sin fondo */
-        display: inline-block;
-    }
-    
-    .lista-proyectos {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el número de columnas automáticamente */
-        gap: 20px; /* Espaciado entre las cajas */
-        justify-items: center; /* Centra los elementos horizontalmente */
-    }
-    
-    .proyectos-caja {
-        
-        border-radius: 10px;
-        padding: 10px;
-        width: 150px;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .proyectos-caja:hover {
-        transform: scale(1.1);
-        box-shadow: 0 6px 10px rgba(0, 188, 212, 0.5);
-    }
-    
-    .proyectos-caja img {
-        width: 100px;
-        height: 100px;
-        object-fit: contain;
-        margin-bottom: 10px;
-    }
-    
-    .proyectos-caja p {
-        font-size: 14px;
-        color: #ccc;
-        margin: 0;
-        text-align: center;
-    }
+.proyecto-item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background: var(--darker-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    width: 100%;
+}
+
+.proyecto-imagen {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.proyecto-detalles {
+    flex: 1;
+    text-align: left;
+}
+
+.proyecto-detalles h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--accent);
+}
+
+.proyecto-detalles p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.proyecto-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.proyecto-tecnologias span {
+    background: var(--accent-glow);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+ 
+/* Aplica el efecto hover a los elementos del proyecto */
+.proyecto-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 188, 212, 0.5);
+}
 
 
     /* Footer */
@@ -427,7 +425,7 @@
         .cara-sobremi {
             margin: 0 auto; /* Centra la imagen horizontalmente */
             width: 250px; /* Ajusta el ancho para pantallas pequeñas */
-            height: auto; /* Mantén la proporción de la imagen */
+            height: auto; /* Mantiene la proporción de la imagen */
         }
     }
     
