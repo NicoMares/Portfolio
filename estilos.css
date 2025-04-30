@@ -405,14 +405,14 @@
     
 
     /* clave para que se vea bien en telefonos */
+    
     @media (max-width: 768px) {
-    .presentacion {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 8rem;
-    }
 
-    @media (max-width: 768px) {
+        .presentacion {
+            flex-direction: column;
+            text-align: center;
+            padding-top: 8rem;
+        }
         .SobreMI {
             flex-direction: column; /* Cambia la dirección a columna */
             text-align: center; /* Centra el texto */
@@ -427,8 +427,51 @@
             width: 250px; /* Ajusta el ancho para pantallas pequeñas */
             height: auto; /* Mantiene la proporción de la imagen */
         }
-    }
+        .lista-proyectos {
+            flex-direction: column; /* Asegura que los proyectos se apilen verticalmente */
+            gap: 20px; /* Reduce el espacio entre los proyectos */
+            padding: 0 10px; /* Añade un poco de espacio lateral */
+        }
     
+        .proyecto-item {
+            flex-direction: column; /* Cambia la dirección a columna */
+            align-items: center; /* Centra los elementos */
+            text-align: center; /* Centra el texto */
+            padding: 15px; /* Reduce el padding */
+        }
+    
+        .proyecto-imagen {
+            width: 100%; /* La imagen ocupa todo el ancho disponible */
+            max-width: 300px; /* Limita el ancho máximo */
+            height: auto; /* Mantiene la proporción */
+            margin-bottom: 15px; /* Añade espacio debajo de la imagen */
+        }
+    
+        .proyecto-detalles {
+            text-align: center; /* Centra el texto */
+        }
+    
+        .proyecto-detalles h3 {
+            font-size: 1.2rem; /* Reduce el tamaño del título */
+        }
+    
+        .proyecto-detalles p {
+            font-size: 0.9rem; /* Reduce el tamaño del texto */
+        }
+    
+        .proyecto-tecnologias {
+            justify-content: center; /* Centra las tecnologías */
+            gap: 5px; /* Reduce el espacio entre las etiquetas */
+        }
+    
+        .proyecto-tecnologias span {
+            font-size: 0.8rem; /* Reduce el tamaño de las etiquetas */
+            padding: 3px 8px; /* Ajusta el padding de las etiquetas */
+        }
+
+    
+
+
     .contenido-presentacion {
         padding-right: 0;
         margin-bottom: 3rem;
