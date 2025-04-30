@@ -233,6 +233,9 @@ object-fit: cover; /* Ajusta la imagen dentro del círculo */
     padding: 10px; /* Espaciado interno */
     display: block; /* Asegura que la imagen se muestre como un bloque */
     margin: 0 auto; /* Centra la imagen horizontalmente */
+    height: 230px; /* Ajusta el tamaño de la imagen */
+    width: 230px;
+
 }
 .proyecto2 {
     width: 30%; /* Ancho del proyecto */
@@ -240,6 +243,9 @@ object-fit: cover; /* Ajusta la imagen dentro del círculo */
     border-radius: 10px; /* Bordes redondeados */
     padding: 10px; /* Espaciado interno */
     text-align: center; /* Centra el texto dentro del proyecto */
+    height: 230px; /* Ajusta el tamaño de la imagen */
+    width: 230px;
+
 }
 
 .card {
