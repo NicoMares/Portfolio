@@ -1,350 +1,429 @@
-
-/*Letra */
-body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-}
-
-
-/*Encabezado*/
-header {
-    height: 65px;
-    background-color:black;
-    display: flex;
-    align-items: center;
-    padding-left: 55px;
-}
-
-
-/*fondo de la pagina*/
-.fondo {
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    }
+    
+    :root {
+    --dark-bg: #0a0a0a;
+    --darker-bg: #050505;
+    --accent: #54C3EA;
+    --accent-glow: rgba(84, 195, 234, 0.4);
+    --text: #ffffff;
+    }
+    
+    body {
+    background-color: var(--dark-bg);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+    }
+    
+    /* Navigation */
+    .navbar {
+    position: fixed;
+    top: 0;
     width: 100%;
+    padding: 1.5rem 5%;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: calc(100vh - 65px); /* Ocupa toda la altura de la pantalla menos el header */
-    background-color:black; /* Fondo negro */
-    color: white; /* Texto blanco */
-}
-
-
-.logo{
-    
-    height: 70x; /* Ajusta el tamaño de la imagen */
-    width: 70px; /* Igual a la altura */
-    object-fit: cover; /* Ajusta la imagen dentro del círculo */
-    margin-right: 20px; /* Espaciado entre la imagen y el texto */
-
-
-}
-
-.texto-presentacion {
-    margin-top: -20px; /* Espaciado superior */
-    margin-right: 150px;
-   
-    color: white; /* Texto blanco */
-    font-size:medium;/*tamaño de la letra*/
-}
-
-.cara{
-
-margin-top: -50px;
-margin-left: 250px;
-height: 330px; /* Ajusta el tamaño de la imagen */
-width: 330px; /* Igual a la altura */
-border-radius: 50%; /* Hace la imagen circular */
-object-fit: cover; /* Ajusta la imagen dentro del círculo */
-
-
-}
-
-
-
-/*Nombre que Figura en la Introduccion*/
-.nombre {
-    font-size: 3.5rem; /* Tamaño grande para el nombre */
-    margin-bottom: 20px; /* Espaciado debajo del nombre */
-}
-
-
-
-.organiza-foto-descripcion-nombre {
-    display: flex;
-    flex-direction: row; /* Alinea los elementos en fila */
-    align-items: center; /* Centra verticalmente */
-    justify-content: space-between; /* Espacia los elementos */
-    width: 1200%; /* Ajusta el ancho del contenedor */
-}
-
-.titulo-SobreMI {
-    font-size: 2rem; /* Tamaño del título */
-    margin-top: -40px; /* Ajusta el margen superior si es necesario */
-    color: white; /* Texto blanco */
-    background-color: black; /* Fondo negro */
-    text-align: center; /* Centra el texto horizontalmente */
-    padding: 10px 0; /* Espaciado interno superior e inferior */
-}
-
-/*(Ubicacion e Color) del Sobre MI */
-.SobreMI {
-    background-color: black; /* Fondo negro */
-    padding: 20px; /* Espaciado interno */
-    color: white; /* Texto blanco */
-    display: flex; /* Activa Flexbox */
-    justify-content: center; /* Centra el contenido horizontalmente */
-}
-.sobreMI-contenedor {
-    display: flex; /* Activa Flexbox para alinear la imagen y el texto */
-    align-items: center; /* Alinea verticalmente al centro */
-    gap: 20px; /* Espaciado entre la imagen y el texto */
-    max-width: 1200px; /* Limita el ancho máximo del contenedor */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-}
-
-.sobreMI-texto {
-    font-size: 1rem; /* Tamaño de fuente */
-    line-height: 1.6; /* Espaciado entre líneas */
-    color: white; /* Color del texto */
-    max-width: 800px; /* Limita el ancho del texto */
-}
-
-.cara-sobremi {
-    height: 350px; /* Ajusta la altura de la imagen */
-    width: 350px; /* Ajusta el ancho de la imagen */
-    border-radius: 20px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra elegante */
-    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
-}
-
-.lenguajes {
-    height: 650px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    color: #ffffff;
-    padding-left: 30%;
-    padding-right: 30%;
-
-}
-
-#contacto {
-    text-align: center; /* Centra todo el contenido */
-    padding: 200px; /* Reduce el padding */
-    margin-top: 0; /* Elimina el margen superior negativo */
-    color: white; /* Texto blanco */
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
     
-}
-
-
-.redes-sociales {
+    .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+    position: relative;
+    padding-left: 2.5rem;
+    }
+    
+    .nav-links {
     display: flex;
-    justify-content: center; /* Centra las redes sociales horizontalmente */
-    gap: 20px; /* Espaciado entre los iconos */
-    margin-top: 0px;
-}
-
-.red-social {
-    height: 50px; /* Tamaño de los íconos */
-    width: 50px;
-    border-radius: 50%; /* Hace los íconos circulares */
-    background-color: #F2F2F2; /* Fondo claro para los íconos */
-    padding: 5px;
-}
-
-
-.instituciones {
-    text-align: center; /* Centra el título */
-    margin-top: 17SS0px; /* Espaciado superior */
-    color: white; /* Color del texto */
-}
-
-.instituciones h2 {
-    font-size: 2rem; /* Tamaño del título */
-    margin-bottom: 20px; /* Espaciado debajo del título */
-}
-
-.instituciones-lista {
-    display: flex; /* Activa Flexbox */
-    justify-content: center; /* Centra las instituciones horizontalmente */
-    flex-wrap: wrap; /* Permite que las instituciones se ajusten en varias filas si es necesario */
-    gap: 20px; /* Espaciado entre las instituciones */
-    margin-top: 20px; /* Espaciado superior */
-}
-
-.instituciones-lista div {
-    text-align: center; /* Centra el contenido dentro de cada institución */
-    width: 150px; /* Ancho fijo para cada institución */
-}
-
-.instituciones-lista img {
-    width: 100%; /* Ajusta el logo al ancho del contenedor */
-    height: auto; /* Mantiene la proporción del logo */
-    border-radius: 10px; /* Bordes redondeados opcionales */
-}
-
-.instituciones-lista p {
-    margin-top: 10px; /* Espaciado entre el logo y el texto */
-    font-size: 0.9rem; /* Tamaño de fuente para los años */
-    color: white; /* Color del texto */
-}
-
-.institucion-logo {
-    width: 100%; /* Ajusta el logo al ancho del contenedor */
-    height: auto; /* Mantiene la proporción del logo */
-    border-radius: 10px; /* Bordes redondeados opcionales */
-}
-
-.tech-list {
-    display: grid; /* Cambia a Grid */
-    grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas uniformes */
-    gap: 20px; /* Espaciado uniforme entre los logos */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    margin-top: 20px; /* Espaciado superior */
-}
-
-.tech {
-    height: 100px; /* Tamaño uniforme para los logos */
-    width: 100px; /* Asegura que todos los logos tengan el mismo ancho */
-    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin distorsionarla */
-    margin: 0 auto; /* Centra cada logo dentro de su celda */
-}
-
-.proyectos {
-   text-align: center; 
-    margin-top: 100px; 
-    color: white; 
-   
-  
-}       
-
-.proyectos-organizadora {
+    gap: 2rem;
+    list-style: none;
+    }
+    
+    .nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    }
+    
+    .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.3s ease;
+    }
+    
+    .nav-links a:hover::after {
+    width: 100%;
+    }
+    
+    /* Hero Section */
+    .presentacion {
+    min-height: 100vh;
     display: flex;
-    justify-content: center; /* Centra los proyectos horizontalmente */
-    flex-wrap: wrap; /* Permite que los proyectos se ajusten en varias filas si es necesario */
-    gap: 20px; /* Espaciado entre los proyectos */
-}
-
-.proyecto1 {
-    width: 300px; /* Ajusta el ancho de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border: solid #F2F2F2 1px; /* Borde claro */
-    border-radius: 10px; /* Bordes redondeados */
-    padding: 10px; /* Espaciado interno */
-    display: block; /* Asegura que la imagen se muestre como un bloque */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-    height: 230px; /* Ajusta el tamaño de la imagen */
-    width: 230px;
-
-}
-.proyecto2 {
-    width: 30%; /* Ancho del proyecto */
-    border: solid #F2F2F2 1px; /* Borde claro */
-    border-radius: 10px; /* Bordes redondeados */
-    padding: 10px; /* Espaciado interno */
-    text-align: center; /* Centra el texto dentro del proyecto */
-    height: 230px; /* Ajusta el tamaño de la imagen */
-    width: 230px;
-
-}
-
-.card {
+    align-items: center;
+    padding: 12% 5%;
+    background: radial-gradient(circle at 75% 30%, var(--accent-glow) 0%, transparent 30%);
+    }
+    
+    .contenido-presentacion {
+    flex: 1;
+    padding-right: 5rem;
+    }
+    
+    .imagen-presentacion {
+    flex: 1;
     text-align: center;
-    width: 30%;
-    border: solid #F2F2F2 1px;
+    position: relative;
+    }
+    
+    .foto-perfil {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 50px var(--accent-glow);
+    animation: float 3s ease-in-out infinite;
+    filter: grayscale(0.2) contrast(1.1);
+    }
+    
+    @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    }
+    
+    .presentacion h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, var(--accent) 30%, #ffffff 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    
+    .presentacion p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    max-width: 720px;
+    }
+    
+
+    .contacto {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, var(--accent), #0c33b4);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    }
+    
+    .titulo-SobreMI {
+        font-size: 2rem; /* Tamaño del título */
+        margin-top: -40px; /* Ajusta el margen superior si es necesario */
+        color: white; /* Texto blanco */
+        
+        text-align: center; /* Centra el texto horizontalmente */
+        padding: 10px 0; /* Espaciado interno superior e inferior */
+    }
+    
+    /*(Ubicacion e Color) del Sobre MI */
+    .SobreMI {
+        
+        padding: 20px; /* Espaciado interno */
+        color: white; /* Texto blanco */
+        display: flex; /* Activa Flexbox */
+        justify-content: center; /* Centra el contenido horizontalmente */
+    }
+    .sobreMI-contenedor {
+        display: flex; /* Activa Flexbox para alinear la imagen y el texto */
+        align-items: center; /* Alinea verticalmente al centro */
+        gap: 20px; /* Espaciado entre la imagen y el texto */
+        max-width: 1200px; /* Limita el ancho máximo del contenedor */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+    }
+    
+    .sobreMI-texto {
+        font-size: 1rem; /* Tamaño de fuente */
+        line-height: 1.6; /* Espaciado entre líneas */
+        color: white; /* Color del texto */
+        max-width: 800px; /* Limita el ancho del texto */
+    }
+    
+    .cara-sobremi {
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 50px var(--accent-glow);
+    animation: float 3s ease-in-out infinite;
+    filter: grayscale(0.2) contrast(1.1);/
+    }
+
+
+    .instituciones {
+        text-align: center;
+        padding: 50px 20px;
+        color: #fff;
+    }
+    
+    .instituciones-titulo {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    .instituciones-titulo h2 {
+        font-size: 3rem;
+        color: #fff;
+        margin: 0;
+        padding-bottom: 10px;
+        border-top: none; /* Sin línea arriba del título */
+        background: none; /* Sin fondo */
+        display: inline-block;
+    }
+    
+    .lista-instituciones {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el número de columnas automáticamente */
+        gap: 20px; /* Espaciado entre las cajas */
+        justify-items: center; /* Centra los elementos horizontalmente */
+    }
+    
+    .instituciones-caja {
+       
+        border-radius: 10px;
+        padding: 10px;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .instituciones-caja:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 10px rgba(0, 188, 212, 0.5);
+    }
+    
+    .instituciones-caja img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+    
+    .instituciones-caja p {
+        font-size: 14px;
+        color: #ccc;
+        margin: 0;
+    }
+
+
+    /* Mis Lenguajes */
+   
+   .lenguajes {
+    text-align: center;
+    padding: 50px 20px;
+    
+    color: #fff;
+}
+
+.lenguajes-titulo {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.lenguajes-titulo h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 10px;
+    border-top: none; /* Elimina la línea arriba del título */
+    background: none; /* Asegúrate de que no haya un fondo */
+    display: inline-block;
+}
+
+.lista-lenguajes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajusta el número de columnas automáticamente */
+    gap: 20px;
+    justify-items: center; /* Centra los elementos horizontalmente */
+}
+
+.lenguajes-caja {
+   
     border-radius: 10px;
     padding: 10px;
-}
-
-
-.card a,
-footer a {
-    color: white;
-}
-
-.red-social {
-    height: 60px;
-    background-color: #F2F2F2;
-    border-radius: 10px;
-}
-
-footer {
-    background-color: black; 
+    width: 100px;
+    height: 100px;
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra el contenido verticalmente */
-    align-items: center; /* Centra el contenido horizontalmente */
-    color: #F2F2F2; /* Color del texto */
-    padding: 20px; /* Espaciado interno */
-    height: auto; /* Ajusta la altura automáticamente al contenido */
-    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
-    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* para que funcionen los botones */
-@media (max-width: 10px) {
-    .caja-central {
-        width: 90%;
-        height: 70%;
-        flex-direction: column;
+.lenguajes-caja:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 188, 212, 0.5);
+}
+
+.lenguajes-caja img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+    .tech-list {
+        display: grid; /* Cambia a Grid */
+        grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas uniformes */
+        gap: 20px; /* Espaciado uniforme entre los logos */
+        justify-content: center; /* Centra el contenido horizontalmente */
+        margin-top: 20px; /* Espaciado superior */
     }
 
-   
-       .tech {
+
+    .tech {
+        height: 100px; /* Tamaño uniforme para los logos */
+        width: 100px; /* Asegura que todos los logos tengan el mismo ancho */
+        object-fit: contain; /* Ajusta la imagen dentro del contenedor sin distorsionarla */
+        margin: 0 auto; /* Centra cada logo dentro de su celda */
+    }
+
+    .tech {
         height: 90px;
     }
-}
-
-    .aptitudes {
-        width: auto;
-    }
-
-    .SobreMI {
-        height: auto;
-        padding: 0 10px 10px 10px;
-
-    }
-
-   
-   
-
- 
-
-   
-
     
+    .proyectos {
+        text-align: center;
+        padding: 50px 20px;
+        color: #fff;
+    }
+    
+    .proyectos-titulo {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    .proyectos-titulo h2 {
+        font-size: 3rem;
+        color: #fff;
+        margin: 0;
+        padding-bottom: 10px;
+        border-top: none; /* Sin línea arriba del título */
+        background: none; /* Sin fondo */
+        display: inline-block;
+    }
+    
+    .lista-proyectos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el número de columnas automáticamente */
+        gap: 20px; /* Espaciado entre las cajas */
+        justify-items: center; /* Centra los elementos horizontalmente */
+    }
+    
+    .proyectos-caja {
+        
+        border-radius: 10px;
+        padding: 10px;
+        width: 150px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .proyectos-caja:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 10px rgba(0, 188, 212, 0.5);
+    }
+    
+    .proyectos-caja img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+    
+    .proyectos-caja p {
+        font-size: 14px;
+        color: #ccc;
+        margin: 0;
+        text-align: center;
+    }
 
-   
 
-   
-
-
-
-
-   
-
-
-
-.link-sobre-mi {
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    margin-left: 630px;
-    /* separación */
-}
-
-.link-contacto {
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    margin-left: 50px;
-    /* separación */
-}
-
-.link-proyectos {
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    margin-left: 50px;
-    /* separación */
-}
+    /* Footer */
+    footer {
+    background: var(--darker-bg);
+    padding: 3rem 5%;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .redes-sociales {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    }
+    
+    .redes-sociales a {
+    color: var(--text);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    }
+    
+    .social-links a:hover {
+    color: var(--accent);
+    transform: translateY(-3px);
+    }
+    
+    @media (max-width: 768px) {
+    .presentacion {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 8rem;
+    }
+    
+    .contenido-presentacion {
+        padding-right: 0;
+        margin-bottom: 3rem;
+    }
+    
+  
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+        padding-left: 2rem;
+    }
+    }
